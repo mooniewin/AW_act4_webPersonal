@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title> Web Personal </title>
+        <meta charset="UTF-8">
+        <!-- AQUI VAN LOS ESTILOS -->
+         <style>
+            /* estilo a todo el contenido del cuerpo */
+            body{
+                background-color: #FFFFFF;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+            }
+
+            /* encabezado */
+            h1{
+                color: #8F3248;
+            }
+            header{
+                background-image: url('images/header1.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: 15%;
+                background-color: ghostwhite;
+                text-align: center;
+                padding: 65px;
+            }
+            /* subtitulos h2 */
+            h2{
+                color: #8F3248;
+            }
+            header a{
+                margin: 0 15px;
+                text-decoration: double;
+                color: #6b0d23;
+                font-weight: bold;
+            }
+            header a:hover{
+                color: #d97098;
+            }
+            /* CONTENIDO */
+            main{
+                padding: 20px;
+            }
+            article, aside{
+                background-color: #fbf5f7;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                box-shadow: 0,0,10px rgba(0, 0, 0, 0.2);
+            }
+            section {
+                background-color: #fbf5f7;
+                padding: 5px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                box-shadow: 0,0,10px rgba(0, 0, 0, 0.2);
+                text-align: center;
+            }
+            aside{
+                background-color: #d8cad0;
+                border-left: 4px solid #876f79;
+            }
+            footer{
+                background-color: rgb(91, 86, 86);
+                color: #FFFFFF;
+                padding: 40px;
+                text-align: center;
+            }
+            .fab{
+                color: #FFFFFF;
+                font-size: 1.5em;
+                margin: 0 15px;
+            }
+            .fab:hover{
+                color: #d97098;
+            }
+
+            /*para que se hagan las columnas de datos personales*/
+            .fila{
+                display: flex; /* para que los divs se pongan de lado*/
+                gap: 20px; /*espacio entre las columnas*/
+                align-items: center; /*centra todo*/
+            }
+            /*lado izquierdo*/
+            .columnaIzquierda{
+                flex: 1; /*centra en y*/
+            }
+            /*lado derecho*/
+            .columnaDerecha{
+                flex-shrink: 0; /*para que no se encoga*/
+                display: flex;
+                justify-content: center; /*centra horizontalmente*/
+                align-items: center; /*centra verticalmente*/
+            }
+            /*centro*/
+            .columnaCentro{
+                flex-shrink: 0; /*para que no se encoga*/
+                display: flex;
+                justify-content: center; /*centra horizontalmente*/
+                align-items: center; /*centra verticalmente*/
+            }
+            /*para que se hagan las columnas de gustos*/
+            .tablaFila{
+                display: flex; /* para que los divs se pongan de lado*/
+                gap: 20px; /*espacio entre las columnas*/
+                align-items: center; /*centra todo*/
+            }
+            .tablaIzquierda{
+                flex: 1;
+            }
+            .tablaCentro{
+                flex: 1;
+            }
+            .tablaDerecha{
+                flex: 1;
+            }
+            /*para que se hagan las columnas de hobbies*/
+            .hFila{
+                display: flex; /* para que los divs se pongan de lado*/
+                gap: 50px; /*espacio entre las columnas*/
+                align-items: center; /*centra todo*/
+            }
+            .columnaTexto{
+                display: flex;
+                justify-content: center; /*centra horizontalmente*/
+                align-items: center; 
+            }
+            .columnaVideo p{
+                margin-right: 20px; /*espacio del parrafo y video*/
+            }
+            .columnaVideo iframe{
+                flex: 1; /*para que el video ocupe el espacio que sobre*/
+            }
+            .columnaSpotify p{
+                margin-right: 20px;
+            }
+            .columnaSpotify{
+                flex: 1;
+            }
+
+         </style>
+
+    </head>
+
+    <body>
+        <!-- ENCABEZADO -->
+         <header>
+            <h1> Web Personal </h1>
+            <!--  ANCLAS -->
+                <a href="#dato"> Datos personales </a>
+                <a href="#gustos"> Gustos </a>
+                <a href="#hobbies"> Hobbies </a>
+         </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+         <main>
+            <!-- PRIMERA SECCIÓN introducción-->
+             <section>
+                <p> <i> holii está es mi página web personal, así que se tratará sobre mí :D </i></p>
+             </section>
+             <!-- SEGUNDA SECCIÓN  datos personales -->
+              <article>
+                <h2 id="dato"> Datos personales </h2>
+                <!-- HACER DOS COLUMNAS -->
+                 <div class="fila">
+                 <!-- lado izquierdo-->
+                 <div class="columnaIzquierda">
+                    <p> Algunas <b>cosas básicas </b>sobre mí: </p>
+                    <ul type = "none">
+                        <li>Mi nombre completo es: <i>Evelyn Montserrat Martínez Carlos</i></li>
+                        <li>Mi cumpleaños es el 16 de Octubre</li>
+                        <li>Tengo 18 años </li>
+                        <li>Mido 1.54m </li>
+                        <li>Uso lentes porque no veo casi nada <small>:c</small></li>
+                        <li>Estoy estudiando y por el momento no trabajo <i> <sub>(me despidieron de mi primer trabajo) </sub></i></li>
+                    </ul>
+                 </div>
+                 <!-- lado derecho -->
+                  <div class="columnaDerecha">
+                    <img src="images/yo1.jpg" alt="Foto mía" width="450">
+                  </div>
+                 <!-- centro -->
+                  <div class="columnaCentro">
+                    <img src="images/yo2.jpg" alt="Otra foto mía" width="350">
+                  </div>
+                 </div>
+              </article>
+
+             <!-- TERCERA SECCIÓN gustos -->
+              <aside>
+                <h2 id="gustos"> Cosas que me gustan</h2>
+                <p> Aquí hay algunas <u>cosas que me gustan</u> y que <u>me gusta hacer</u>:</p>
+                <div class="tablaFila">
+                    <!-- lado izquierdo -->
+                     <div class="tablaIzquierda">
+                        <table border="0">
+                            <thead>
+                            <tr>
+                                <th> ♡ </th>
+                                <th> gustos </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> ❤️ </td>
+                                    <td> Escuchar música </td>
+                                </tr>
+                                <tr>
+                                    <td> 🩷 </td>
+                                    <td> Usar mis audífonos la mayoría del tiempo </td>
+                                </tr>
+                                <tr>
+                                    <td> 🧡 </td>
+                                    <td> Ir al gym con mi novio </td>
+                                </tr>
+                                <tr>
+                                    <td> 💛 </td>
+                                    <td> Ir a cafeterias </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                 </div>
+                 <!-- lado centro -->
+                     <div class="tablaCentro">
+                        <table border="0">
+                            <thead>
+                            <tr>
+                                <th> ♡ </th>
+                                <th> gustos </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> 💙 </td>
+                                    <td> El frappé de oreo </td>
+                                </tr>
+                                <tr>
+                                    <td> 🩵 </td>
+                                    <td> Dormir con mis 4 perras </td>
+                                </tr>
+                                <tr>
+                                    <td> 💜 </td>
+                                    <td> El color morado </td>
+                                </tr>
+                                <tr>
+                                    <td> 🤎 </td>
+                                    <td> El café </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                 </div>
+                 <!-- lado derecho -->
+                     <div class="tablaDerecha">
+                        <table border="0">
+                            <thead>
+                            <tr>
+                                <th> ♡ </th>
+                                <th> gustos </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> 🖤 </td>
+                                    <td> Los subtonos obscuros </td>
+                                </tr>
+                                <tr>
+                                    <td> 🩶 </td>
+                                    <td> Ver videos de terror, cosas paranormales </td>
+                                </tr>
+                                <tr>
+                                    <td> 🤍 </td>
+                                    <td> Los bitis </td>
+                                </tr>
+                                <tr>
+                                    <td> 💗 </td>
+                                    <td> Dormir con mi novio </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                 </div>
+                </div>
+                
+              </aside>
+
+             <!-- CUARTA SECCIÓN hobbies -->
+              <article>
+                <h2 id="hobbies"> Mis hobbies </h2>
+                <p> Algunas de las <u>cosas que me gustan hacer</u> son: </p>
+                <div class="hFila">
+                    <div class="columnaTexto">
+                    <ul type = "none">
+                        <h4> Videojuegos </h4>
+                        <li> <em> Jugar Minecraft con mi novio </em> </li>
+                        <li> <em> Hacer construcciones en Minecraft </em> </li>
+                        <hr>
+                        <h4> Otras cosas </h4>
+                        <li> <em> Ver videos de German </em> </li>
+                        <li> <em> Jugar ajedrez </em> </li>
+                        <hr>
+                        <h4> Favoritos </h4>
+                        <li> <em> Ponerme mascarillas </em> </li>
+                        <li> <em> Arreglarme las uñas </em> </li>
+                        <li> <em> Maquillarme </em> </li>
+                        <hr>
+                    </ul>
+                    </div>
+                    <div class="columnaVideo">
+                    <!-- vvideo embebido -->
+                     <p><i>Video de German que estaba viendo mientras termino con mi página web: </i></p>
+                    <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/bqPCKnRf-ig?si=Wa-RV10EDP5Xz4Uo"
+                    frameborder="0" allowfullscreen></iframe>
+                    </div> 
+                    <div class="columnaSpotify">
+                        <p><i>Mi playlist de Spotify: </i></p>
+                        <iframe width="100%" height="352"
+                        src="https://open.spotify.com/embed/playlist/4wgkcduaNPsMRHYw3xbGe3?utm_source=generator" 
+                        frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+              </article>
+         </main>
+        <!-- FOOTER -->
+         <footer>
+            <p> &copy; 2025 Web Personal | Contacto: emmtzc.27@gmail.com </p>
+            <nav>
+                <a href="https://www.facebook.com/asiaticxs.wonitxs/" target="_blank">
+                    <!-- se agrega del icono en linea, iconos se comportan como tipografias  -->
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/mooniewin_/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://pin.it/6UiT7rcOk" target="_blank">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </nav>
+         </footer>
+    </body>
+</html>
